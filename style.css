@@ -1,0 +1,427 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+body{
+ background: #ede0d4;
+
+}
+/* Browser reset */
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  scroll-behavior: smooth;
+}
+
+p 
+{
+  font-weight: 400; 
+  color: #111;
+}
+
+.banner {
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/images/cover.png);
+  background-size: cover;
+}
+
+/* Banning content styles */
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Banner title styles */
+.banner .content h2 {
+  font-size: 5em;
+  color: #fff;
+}
+
+/* Banner caption styles */
+.banner .content p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Styling for the explore button */
+.btn {
+  font-size: 1em;
+  color: #fff;
+  background: #fb8b24;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover
+{
+  letter-spacing: 3px;
+}
+
+/* Styling of the header bar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+/* Color of page header title */
+header.sticky {
+  background: #fff;
+  padding: 10px 100px;
+}
+
+/* Styling of page header title */
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/* Color of page header title when page is scrolled */
+header.sticky .logo 
+{
+  color: #111;
+}
+
+/* Color of page header title emphasis */
+header .logo span 
+{
+  color: #fb8b24;
+}
+
+/* Styling for header nav bar */
+header .navigation 
+{
+  position: relative;
+  display: flex;
+}
+
+/* Styling for header nav bar links */
+header .navigation li 
+{
+  list-style: none;
+  margin-left: 30px;
+}
+
+/* Styling for header nav bar links */
+header .navigation li a 
+{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300; 
+}
+
+/* Styling for header nav bar links */
+header.sticky .navigation li a 
+{
+  color: #111;
+}
+
+/* Styling for header nav bar links */
+header .navigation li a:hover 
+{
+  color: #fb8b24;
+}
+
+section 
+{
+  padding: 100px;
+}
+
+/* Styling for first paragraph */
+.row 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.6;
+  text-indent: 15px;
+  text-align: justify;
+}
+
+/* Styling for first paragraph */
+.row .col50 
+{
+  position: relative;
+  width: 48%;
+}
+
+/* Paragraph title */
+.titleText 
+{
+  color: #111;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+/* Paragraph title emphasis */
+.titleText span 
+{
+  color: #fb8b24;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* Image styling for first image */
+.row .col50 .img1 
+{
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+}
+
+/* Image styling for first iamge */
+.img1 img 
+{
+  max-height: 500px;
+  max-width: 300px;
+  margin-left: 70px;
+}
+
+/* Second image styles */
+.img2 img 
+{
+  margin-top: 20px;
+}
+
+/* Third image styles */
+.row .col50 .img3 
+{
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+}
+
+/* Third image styles */
+.img3 img 
+{
+  max-height: 500px;
+  max-width: 300px;
+  margin-left: 80px;
+}
+
+/* First image caption */
+.fig1 
+{
+  margin-left: 60px;
+  text-align: left;
+  text-indent: 20px;
+}
+
+/* Second paragraph styles */
+.row2 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-indent: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Second paragraph styles */
+.row2 .col60 
+{
+  position: relative;
+  width: 48%;
+}
+
+/* Third paragraph styles */
+.row3 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-indent: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Third paragraph styles */
+.row3 .col70 
+{
+  position: relative;
+  width: 48%;
+}
+
+
+/* Second image caption */
+.fig2 
+{
+  text-indent: 20px;
+}
+
+footer 
+{
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* Styles for mobile screen sizes */
+@media (max-width: 791px) 
+{
+  header,
+  header.sticky 
+  {
+    padding: 10px 20px;
+  }
+
+  header .navigation 
+  {
+    display: none;
+  }
+  
+  /* Styles for nav bar when clicked */
+  header .navigation.active 
+  {
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+  }
+
+/* Styles for nav links */
+  header .navigation li 
+  {
+    margin-left: 0;
+  }
+
+/* Styles for nav links */
+  header .navigation li a 
+  {
+    color: #111;
+    font-size: 1.6em;
+  }
+
+/* Styles for menu burger */
+  .menuToggle
+  {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(/images/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  /* When menu burger is activated */
+  .menuToggle.active 
+  {
+    background: url(/images/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  header.sticky .menuToggle 
+  {
+    filter: invert(1)
+  }
+  
+  section 
+  {
+    padding: 20px;
+  }
+
+  .banner .content h2 
+  {
+    font-size: 3em;
+    color: #fff;
+  }
+
+/* First paragraph styles */
+  .row 
+  {
+    flex-direction: column;
+    
+  }
+
+/* First paragraph styles */
+  .row .col50 
+  {
+    position: relative;
+    width: 100%;
+  }
+
+/* First image styles */
+  .row col50 .img1 
+  {
+    height: 300px;
+    margin-top: 5px;
+    margin-right: 30px;
+  }
+
+/* First image styles */
+  .img1 
+  {
+    margin-top: 15px;
+  }
+
+/* Third image styles */
+  .img3 img 
+  {
+  max-height: 500px;
+  max-width: 300px;
+  margin-left: 50px;
+  margin-top: 15px;
+  }
+
+  .row2 
+  {
+    flex-direction: column;
+  }
+
+/* Second paragraph styles */
+  .row2 .col60 
+  {
+    position: relative;
+    width: 100%;
+  } 
+
+  .row3 
+  {
+    flex-direction: column;
+  }
+
+  /* Third paragraph styles */
+  .row3 .col70 
+  {
+    position: relative;
+    width: 100%;
+  }
+}
